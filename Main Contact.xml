@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigiumIPPhoneDirectory>
+
+ <DirectoryEntry>
+    <Name>DRM/HHW</Name>
+    <Telephone>400</Telephone>
+  </DirectoryEntry>
+
+ <DirectoryEntry>
+    <Name>Dy.CPM(Engg)/HWH</Name>
+    <Telephone>401</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>ADRM(ADMIN)/HWH</Name>
+    <Telephone>402</Telephone>
+  </DirectoryEntry>
+
+ <DirectoryEntry>
+    <Name>Ch.OS(G)/HWH</Name>
+    <Telephone>403</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>TI(DRM)/HWH</Name>
+    <Telephone>404</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Sr.DMM/HWH</Name>
+    <Telephone>405</Telephone>
+  </DirectoryEntry>
+
+ <DirectoryEntry>
+    <Name>Dy.CPM(Elec.)/HWH</Name>
+    <Telephone>406</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>CPM(GSU)/HWH</Name>
+    <Telephone>407</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DOM(Safety)/HWH</Name>
+    <Telephone>408</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ADRM(OP)/HWH</Name>
+    <Telephone>409</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DFM/HWH</Name>
+    <Telephone>410</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DME(Coaching)/HWH</Name>
+    <Telephone>411</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.AO/HWH</Name>
+    <Telephone>412</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Exchange Room</Name>
+    <Telephone>413</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Unk</Name>
+    <Telephone>414</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ADFM(I)/HWH</Name>
+    <Telephone>415</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ADFM(PC)/HWH</Name>
+    <Telephone>416</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Control Testroom</Name>
+    <Telephone>417</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DCM/HWH</Name>
+    <Telephone>421</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DCM/HWH</Name>
+    <Telephone>422</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACM(PG)/HWH</Name>
+    <Telephone>423</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACM(HC)/HWH</Name>
+    <Telephone>424</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACM(HG)/HWH</Name>
+    <Telephone>425</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACM(I)/HWH</Name>
+    <Telephone>426</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACM(TC)/HWH</Name>
+    <Telephone>427</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DEE(G)/HWH</Name>
+    <Telephone>430</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DEE(EMU)/HWH</Name>
+    <Telephone>431</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DEE(TRD)/HWH</Name>
+    <Telephone>432</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DEE(OP)/HWH</Name>
+    <Telephone>433</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DEE(G)/HWH</Name>
+    <Telephone>434</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DEE(TRD)/HWH</Name>
+    <Telephone>435</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>TPC CONTROL</Name>
+    <Telephone>437</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DOM(OP)/HWH</Name>
+    <Telephone>439</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>SR.DEN(Co.)/HWH</Name>
+    <Telephone>440</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>SR.DEN(I)/HWH</Name>
+    <Telephone>441</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>SR.DEN(II)/HWH</Name>
+    <Telephone>442</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>SR.DEN(III)/HWH</Name>
+    <Telephone>443</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>SR.DEN(IV)/HWH</Name>
+    <Telephone>444</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DEN(Br.)/HWH</Name>
+    <Telephone>445</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DEN(HQ)/HWH</Name>
+    <Telephone>446</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Dy.CE(CON-I)/HWH</Name>
+    <Telephone>447</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Dy.CE(CON-II)/HWH</Name>
+    <Telephone>448</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Signal Control</Name>
+    <Telephone>449</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>unk/HWH</Name>
+    <Telephone>450</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DME(D)/HWH</Name>
+    <Telephone>451</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>CDO TKPR</Name>
+    <Telephone>453</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DME(D)/HWH</Name>
+    <Telephone>454</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DFM(I)/HWH</Name>
+    <Telephone>455</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>CMS/HWH(Ortho)</Name>
+    <Telephone>460</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACMS(P)/HWH</Name>
+    <Telephone>461</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ACMS(Admin)/HWH</Name>
+    <Telephone>462</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DOM/HWH</Name>
+    <Telephone>470</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DSO/HWH</Name>
+    <Telephone>471</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Station Director/HWH</Name>
+    <Telephone>472</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DOM(Coaching)/HWH</Name>
+    <Telephone>473</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Chief Controller/HWH</Name>
+    <Telephone>474</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Station Manager/HWH</Name>
+    <Telephone>475</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Deputy(Coaching)/HWH</Name>
+    <Telephone>476</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DSO/HWH</Name>
+    <Telephone>477</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>AOM(Safety)/HWH</Name>
+    <Telephone>478</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DPO/HWH</Name>
+    <Telephone>480</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Unk</Name>
+    <Telephone>481</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Unk</Name>
+    <Telephone>482</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Unk</Name>
+    <Telephone>483</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Unk</Name>
+    <Telephone>484</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DSC/HWH</Name>
+    <Telephone>485</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Unk</Name>
+    <Telephone>486</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>SRP(GRP)/HWH</Name>
+    <Telephone>487</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>APO(G)/HWH</Name>
+    <Telephone>488</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>unk</Name>
+    <Telephone>489</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DSTE/HWH</Name>
+    <Telephone>490</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.DSTE(I)/HWH</Name>
+    <Telephone>491</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ASTE(I)/HWH</Name>
+    <Telephone>492</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DSTE(Works)/HWH</Name>
+    <Telephone>493</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Dy.CSTE(Works)/HWH</Name>
+    <Telephone>495</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Dy.CSTE(CON)/HWH</Name>
+    <Telephone>496</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>DSTE(I)/HWH</Name>
+    <Telephone>497</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ASTE(Tele)/HWH</Name>
+    <Telephone>499</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Auto Testroom</Name>
+    <Telephone>539</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>ADFM(II)/HWH</Name>
+    <Telephone>544</Telephone>
+  </DirectoryEntry>
+
+<DirectoryEntry>
+    <Name>Sr.EnHM</Name>
+    <Telephone>545</Telephone>
+  </DirectoryEntry>
+
+</DigiumIPPhoneDirectory>
