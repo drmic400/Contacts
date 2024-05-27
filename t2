@@ -1,30 +1,286 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AddressBook>
-<Contact>
-<LastName/>
-<FirstName>DRM</FirstName>
-<Phone>
-<phonenumber>400</phonenumber>
-<accountindex>1</accountindex>
-<downloaded>0</downloaded>
-</Phone>
-</Contact>
-<Contact>
-<LastName/>
-<FirstName>SR.DSTE</FirstName>
-<Phone>
-<phonenumber>490</phonenumber>
-<accountindex>1</accountindex>
-<downloaded>0</downloaded>
-</Phone>
-</Contact>
-<Contact>
-<LastName/>
-<FirstName>Ram</FirstName>
-<Phone>
-<phonenumber>401</phonenumber>
-<accountindex>1</accountindex>
-<downloaded>0</downloaded>
-</Phone>
-</Contact>
-</AddressBook>
+<config>
+  <setting id="login_password" value="123456"/>
+  <setting id="time_zone" value="America/Chicago"/>
+  <setting id="time_source" value="ntp"/>
+  <setting id="ntp_server" value="0.digium.pool.ntp.org"/>
+  <setting id="ntp_resync" value="86400"/>
+  <setting id="accept_local_calls" value="host"/>
+  <setting id="transport_udp_enabled" value="1"/>
+  <setting id="transport_udp_port" value="5160"/>
+  <setting id="transport_tcp_enabled" value="1"/>
+  <setting id="transport_tcp_port" value="5160"/>
+  <setting id="logo_file" value="factory" path="/factory_asterisk.png" url="" md5="dabf50a92e45764a0be1e44dd3a35215"/>
+  <setting id="display_mc_notification" value="1"/>
+  <setting id="brightness" value="5"/>
+  <setting id="contrast" value="5"/>
+  <setting id="dim_backlight" value="1"/>
+  <setting id="backlight_timeout" value="30"/>
+  <setting id="backlight_dim_level" value="2"/>
+  <setting id="ringer_volume" value="5"/>
+  <setting id="speaker_volume" value="5"/>
+  <setting id="handset_volume" value="5"/>
+  <setting id="headset_volume" value="5"/>
+  <setting id="reset_call_volume" value="0"/>
+  <setting id="active_ringtone" value="Digium"/>
+  <setting id="headset_answer" value="0"/>
+  <setting id="enable_blf_on_unused_line_keys" value="1"/>
+  <setting id="name_format" value="first_last"/>
+  <setting id="contacts_max_subscriptions" value="40"/>
+  <setting id="blf_contact_group" value="Default"/>
+  <setting id="network_enable_dhcp" value="1"/>
+  <setting id="network_static_ip_address" value=""/>
+  <setting id="network_subnet_mask" value=""/>
+  <setting id="network_default_gateway" value=""/>
+  <setting id="network_domain_name" value=""/>
+  <setting id="network_primary_dns_server" value=""/>
+  <setting id="network_secondary_dns_server" value=""/>
+  <setting id="network_vlan_discovery_mode" value="NONE" network="0.0.0.0/0"/>
+  <setting id="sip_qos" value="3"/>
+  <setting id="rtp_qos" value="6"/>
+  <setting id="pc_qos" value="1"/>
+  <setting id="network_vlan_id" value=""/>
+  <setting id="log_level" value="debug"/>
+  <setting id="enable_logging" value="1"/>
+  <setting id="log_server" value="10.1.2.3"/>
+  <setting id="log_port" value="514"/>
+  <setting id="web_ui_enabled" value="1"/>
+  <setting id="sip_dscp" value="24"/>
+  <setting id="rtp_dscp" value="46"/>
+  <setting id="udp_ka_interval" value="0"/>
+  <setting id="enable_check_sync" value="1"/>
+  <setting id="locale" value="en_US"/>
+  <setting id="ehs" value="auto"/>
+  <contacts url="http://192.168.0.112:84/701.xml" md5="3ca89231f837a03bfcc6c038400ddbba" id="internal"/>
+  <setting id="ring_headset_only" value="0"/>
+  <setting id="call_waiting_tone" value="1"/>
+  <setting id="pc_vlan_id" value=""/>
+  <setting id="lan_port_mode" value="auto"/>
+  <setting id="pc_port_mode" value="auto"/>
+  <setting id="8021x_passthrough" value="0"/>
+  <setting id="8021x_eapol_on_disconnect" value="0"/>
+  <setting id="8021x_method" value=""/>
+  <setting id="8021x_identity" value=""/>
+  <setting id="8021x_anonymous_identity" value=""/>
+  <setting id="8021x_password" value=""/>
+  <setting id="8021x_client_cert" url="" value=""/>
+  <setting id="8021x_root_cert" url="" value=""/>
+  <setting id="8021x_debug" value=""/>
+  <setting id="parking_lot_extension" value="70"/>
+  <setting id="parking_lot_enable_blind_transfer" value="1"/>
+  <setting id="use_call_photos" value="1" url=""/>
+  <setting id="expansion_enable" value="0" type="EXP100" page_indicators="0"/>
+  <setting id="network_default_enable_openvpn" value="0"/>
+  <setting id="openvpn_inline_config" url=""/>
+  <setting id="send_mac_with_useragent" value="1"/>
+  <setting id="transport_tls_allowed" value="1"/>
+  <setting id="transport_tls_port" value="5160"/>
+  <setting id="tls_allow_wildcard_certs" value="0"/>
+  <setting id="lock_ringing_volume" value="0"/>
+  <setting id="hide_completed_elsewhere" value="0"/>
+  <smart_blf>
+    <blf_items url="http://192.168.0.112:84/701-blf.xml" md5="cfd3dc311d2cdc72e44a407281ef2157"/>
+  </smart_blf>
+  <codecs>
+    <codec id="PCMU" priority="255" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="PCMA" priority="13" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="G722" priority="11" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="G726-32" priority="7" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="G729" priority="4" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="L16" priority="2" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="L16-256" priority="1" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
+    <codec id="opus" priority="6" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1" complexity="10" samplerate="wb" use_vbr="1"/>
+  </codecs>
+  <ringtones>
+    <tones>
+      <tone id="Alarm" display="Alarm" type="phone"/>
+      <tone id="Chimes" display="Chimes" type="phone"/>
+      <tone id="Digium" display="Digium" type="phone"/>
+      <tone id="GuitarStrum" display="Guitar Strum" type="phone"/>
+      <tone id="Jingle" display="Jingle" type="phone"/>
+      <tone id="Office" display="Office" type="phone"/>
+      <tone id="Office2" display="Office 2" type="phone"/>
+      <tone id="RotaryPhone" display="Rotary Phone" type="phone"/>
+      <tone id="SteelDrum" display="Steel Drum" type="phone"/>
+      <tone id="Techno" display="Techno" type="phone"/>
+      <tone id="Theme" display="Theme" type="phone"/>
+      <tone id="Tweedle" display="Tweedle" type="phone"/>
+      <tone id="Twinkle" display="Twinkle" type="phone"/>
+      <tone id="Vibe" display="Vibe" type="phone"/>
+    </tones>
+    <alerts>
+      <alert alert_info="normal" ringtone_id="Digium" ring_type="normal"/>
+      <alert alert_info="ring-answer" ringtone_id="Digium" ring_type="ring-answer"/>
+      <alert alert_info="intercom" ringtone_id="" ring_type="answer"/>
+      <alert alert_info="visual" ringtone_id="" ring_type="visual"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=normal" ringtone_id="Digium" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=ring-answer" ringtone_id="Digium" ring_type="ring-answer"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=intercom" ringtone_id="" ring_type="answer"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=visual" ringtone_id="" ring_type="visual"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Alarm" ringtone_id="Alarm" ring_type="normal"/>
+      <alert alert_info="Alarm" ringtone_id="Alarm" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Chimes" ringtone_id="Chimes" ring_type="normal"/>
+      <alert alert_info="Chimes" ringtone_id="Chimes" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Digium" ringtone_id="Digium" ring_type="normal"/>
+      <alert alert_info="Digium" ringtone_id="Digium" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=GuitarStrum" ringtone_id="GuitarStrum" ring_type="normal"/>
+      <alert alert_info="GuitarStrum" ringtone_id="GuitarStrum" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Jingle" ringtone_id="Jingle" ring_type="normal"/>
+      <alert alert_info="Jingle" ringtone_id="Jingle" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Office" ringtone_id="Office" ring_type="normal"/>
+      <alert alert_info="Office" ringtone_id="Office" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Office2" ringtone_id="Office2" ring_type="normal"/>
+      <alert alert_info="Office2" ringtone_id="Office2" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=RotaryPhone" ringtone_id="RotaryPhone" ring_type="normal"/>
+      <alert alert_info="RotaryPhone" ringtone_id="RotaryPhone" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=SteelDrum" ringtone_id="SteelDrum" ring_type="normal"/>
+      <alert alert_info="SteelDrum" ringtone_id="SteelDrum" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Techno" ringtone_id="Techno" ring_type="normal"/>
+      <alert alert_info="Techno" ringtone_id="Techno" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Theme" ringtone_id="Theme" ring_type="normal"/>
+      <alert alert_info="Theme" ringtone_id="Theme" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Tweedle" ringtone_id="Tweedle" ring_type="normal"/>
+      <alert alert_info="Tweedle" ringtone_id="Tweedle" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Twinkle" ringtone_id="Twinkle" ring_type="normal"/>
+      <alert alert_info="Twinkle" ringtone_id="Twinkle" ring_type="normal"/>
+      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Vibe" ringtone_id="Vibe" ring_type="normal"/>
+      <alert alert_info="Vibe" ringtone_id="Vibe" ring_type="normal"/>
+    </alerts>
+  </ringtones>
+  <firmwares>
+    <firmware model="D50" version="2_9_25" url="http://192.168.0.112:84/digium/0/D50.eff"/>
+    <firmware model="D70" version="2_9_25" url="http://192.168.0.112:84/digium/0/D70.eff"/>
+    <firmware model="D40" version="2_9_25" url="http://192.168.0.112:84/digium/0/D40.eff"/>
+    <firmware model="D45" version="2_9_25" url="http://192.168.0.112:84/digium/0/D45.eff"/>
+    <firmware model="D60" version="2_9_25" url="http://192.168.0.112:84/digium/0/D60.eff"/>
+    <firmware model="D62" version="2_9_25" url="http://192.168.0.112:84/digium/0/D62.eff"/>
+    <firmware model="D65" version="2_9_25" url="http://192.168.0.112:84/digium/0/D65.eff"/>
+    <firmware model="D80" version="1_12_14" url="http://192.168.0.112:84/digium/0/D80.eff"/>
+    <firmware model="P310" version="4_18_2" url="http://192.168.0.112:84/digium/0/P310.eff"/>
+    <firmware model="P315" version="4_18_2" url="http://192.168.0.112:84/digium/0/P315.eff"/>
+    <firmware model="P320" version="4_18_2" url="http://192.168.0.112:84/digium/0/P320.eff"/>
+    <firmware model="P325" version="4_18_2" url="http://192.168.0.112:84/digium/0/P325.eff"/>
+    <firmware model="P330" version="4_18_2" url="http://192.168.0.112:84/digium/0/P330.eff"/>
+    <firmware model="P370" version="4_18_2" url="http://192.168.0.112:84/digium/0/P370.eff"/>
+  </firmwares>
+  <multicastpage>
+    <listener id="1" name="Multicast1" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="2" name="Multicast2" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="3" name="Multicast3" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="4" name="Multicast4" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="5" name="Multicast5" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="6" name="Multicast6" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="7" name="Multicast7" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="8" name="Multicast8" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="9" name="Multicast9" addr="" priority="1" interrupt_calls="0"/>
+    <listener id="10" name="Multicast10" addr="" priority="1" interrupt_calls="0"/>
+  </multicastpage>
+  <public_firmwares>
+    <public_firmware model="P310" version="4_18_2" url="http://phones.dl.sangoma.com/firmware/p-series/4_18_2/4_18_2_P310_firmware.eff"/>
+    <public_firmware model="P315" version="4_18_2" url="http://phones.dl.sangoma.com/firmware/p-series/4_18_2/4_18_2_P315_firmware.eff"/>
+    <public_firmware model="P320" version="4_18_2" url="http://phones.dl.sangoma.com/firmware/p-series/4_18_2/4_18_2_P320_firmware.eff"/>
+    <public_firmware model="P325" version="4_18_2" url="http://phones.dl.sangoma.com/firmware/p-series/4_18_2/4_18_2_P325_firmware.eff"/>
+    <public_firmware model="P330" version="4_18_2" url="http://phones.dl.sangoma.com/firmware/p-series/4_18_2/4_18_2_P330_firmware.eff"/>
+    <public_firmware model="P370" version="4_18_2" url="http://phones.dl.sangoma.com/firmware/p-series/4_18_2/4_18_2_P370_firmware.eff"/>
+  </public_firmwares>
+  <accounts>
+    <account index="0" status="1" register="1" account_id="701" username="701" authname="701" password="70100" passcode="70100" line_label="701" caller_id="701" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace" api_password="">
+      <host_primary server="192.168.0.112" port="5160" transport="udp" reregister="300" retry="25" num_retries="5" media_encryption=""/>
+      <host_alternate server="" port="5160" transport="udp" reregister="300" retry="25"/>
+    </account>
+    <account index="1" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
+      <host_primary server="" port="5160" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
+      <host_alternate server="" port="5160" transport="0" reregister="300" retry="25"/>
+    </account>
+    <account index="2" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
+      <host_primary server="" port="5160" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
+      <host_alternate server="" port="5160" transport="0" reregister="300" retry="25"/>
+    </account>
+    <account index="3" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
+      <host_primary server="" port="5160" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
+      <host_alternate server="" port="5160" transport="0" reregister="300" retry="25"/>
+    </account>
+    <account index="4" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
+      <host_primary server="" port="5160" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
+      <host_alternate server="" port="5160" transport="0" reregister="300" retry="25"/>
+    </account>
+    <account index="5" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
+      <host_primary server="" port="5160" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
+      <host_alternate server="" port="5160" transport="0" reregister="300" retry="25"/>
+    </account>
+  </accounts>
+  <keymap>
+    <state id="idle" conflict="replace">
+      <softkeys>
+        <key id="0" action="missed_or_call_log"/>
+        <key id="1" action="show_application" label1="Contacts">
+          <arg>contactmanager_freepbx</arg>
+        </key>
+        <key id="2" action="show_application" label1="_STATUS">
+          <arg>status</arg>
+        </key>
+        <key id="3" action="show_application" label1="_LOGOUT">
+          <arg>hotdesking</arg>
+        </key>
+        <key id="4" action="show_application" label1="_PARKED_CALLS">
+          <arg>parking</arg>
+        </key>
+        <key id="5" action="forward_calls" label1="Forward Calls"/>
+        <key id="6" action="menu"/>
+      </softkeys>
+    </state>
+    <state id="hold" conflict="replace">
+      <softkeys>
+        <key id="0" action="resume"/>
+        <key id="1" action="show_application" label1="_CONTACTS">
+          <arg>contacts</arg>
+        </key>
+        <key id="2" action="end_call"/>
+      </softkeys>
+    </state>
+    <state id="incoming" conflict="replace">
+      <softkeys>
+        <key id="0" action="accept_call"/>
+        <key id="1" action="reject_call"/>
+        <key id="2" action="transfer_call"/>
+        <key id="3" action="send_to_vmail"/>
+      </softkeys>
+    </state>
+    <state id="connected" conflict="replace">
+      <softkeys>
+        <key id="0" action="conference"/>
+        <key id="1" action="show_application" label1="_CONTACTS">
+          <arg>contacts</arg>
+        </key>
+        <key id="2" action="end_call"/>
+        <key id="3" action="record_call"/>
+        <key id="4" action="park_call" label1="Park Call"/>
+      </softkeys>
+    </state>
+    <state id="dial" conflict="replace">
+      <softkeys>
+        <key id="0" action="show_application" label1="_PARKED_CALLS">
+          <arg>parking</arg>
+        </key>
+        <key id="1" action="show_application" label1="Contacts">
+          <arg>contactmanager_freepbx</arg>
+        </key>
+        <key id="2" action="cancel_call"/>
+      </softkeys>
+    </state>
+    <state id="calling" conflict="replace">
+      <softkeys>
+        <key id="0" action="end_call"/>
+      </softkeys>
+    </state>
+  </keymap>
+  <appconfig id="contactmanager_freepbx">
+    <url url="http://192.168.0.112:82/application_contactmanager_freepbx.zip" md5="4728f59af9bd758a341de4e4760a4723"/>
+    <settings path="contactmanager/main" uri="http://192.168.0.112:82/applications.php" user="701" mac="000FD3D12AA2" subscription="sip:701"/>
+    <auto_start/>
+  </appconfig>
+  <appconfig id="contactmanager_freepbx">
+    <url url="http://192.168.0.112:82/application_contactmanager_freepbx.zip" md5="4728f59af9bd758a341de4e4760a4723"/>
+    <settings path="contactmanager/main" uri="http://192.168.0.112:82/applications.php" user="701" mac="000FD3D12AA2" subscription="sip:701"/>
+    <auto_start/>
+  </appconfig>
+</config>
