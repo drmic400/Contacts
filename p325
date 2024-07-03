@@ -48,7 +48,7 @@
   <setting id="enable_check_sync" value="1"/>
   <setting id="locale" value="en_US"/>
   <setting id="ehs" value="auto"/>
-  <contacts url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/432-1.xml" md5="874610a04e63c830da5b986b30bd6211" id="internal"/>
+  <contacts url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/600-1.xml" md5="347a17d1c585d9d6febb14a95decfacc" id="internal"/>
   <setting id="ring_headset_only" value="0"/>
   <setting id="call_waiting_tone" value="1"/>
   <setting id="pc_vlan_id" value=""/>
@@ -79,7 +79,7 @@
   <setting id="hide_completed_elsewhere" value="0"/>
   <setting id="idle_company_text" value=""/>
   <smart_blf>
-    <blf_items url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/432-1-blf.xml" md5="74bfb4fc2f43b4da9544db2223a9543f"/>
+    <blf_items url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/600-1-blf.xml" md5="74bfb4fc2f43b4da9544db2223a9543f"/>
   </smart_blf>
   <codecs>
     <codec id="PCMU" priority="255" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
@@ -173,7 +173,7 @@
     <public_firmware model="P370" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P370_firmware.eff"/>
   </public_firmwares>
   <accounts>
-    <account index="0" status="1" register="1" account_id="16" username="432" authname="432" password="140432" passcode="140432" line_label="Sr.DEE (TRD)-432" caller_id="Sr.DEE (TRD)-432" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace" api_password="$2a$08$CQ5pKFpRIZrFQ2Q2D0P/4O2Rd1004cR2.ef4CriTyV8fLy80L82Fq">
+    <account index="0" status="1" register="1" account_id="95" username="600" authname="600" password="140600" passcode="140600" line_label="Test1-600" caller_id="Test1-600" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace" api_password="$2a$08$U9rna3/CNHSGAHUAwGED8.i2zRa/eT8SGz2QnNrTP6EzBmBHU8nOG">
       <host_primary server="10.162.15.11" port="5060" transport="udp" reregister="300" retry="25" num_retries="5" media_encryption=""/>
       <host_alternate server="" port="5060" transport="udp" reregister="300" retry="25"/>
       <setting id="parking_lot_extension" value="70"/>
@@ -290,7 +290,7 @@
     </hide_options>
     <auto_start/>
   </appconfig>
-  <setting id="pbx_credentials" value="SWVX-7151" network="0.0.0.0/0" network_id="0" host="10.162.15.220" account_id="16" user="432" pass="$2a$08$CQ5pKFpRIZrFQ2Q2D0P/4O2Rd1004cR2.ef4CriTyV8fLy80L82Fq"/>
+  <setting id="pbx_credentials" value="SWVX-7151" network="0.0.0.0/0" network_id="0" host="10.162.15.220" account_id="95" user="600" pass="$2a$08$U9rna3/CNHSGAHUAwGED8.i2zRa/eT8SGz2QnNrTP6EzBmBHU8nOG"/>
   <settings in_switchvox_environment="1"/>
   <appconfig id="appscreen">
     <application id="call_log"/>
@@ -304,13 +304,13 @@
   </appconfig>
   <!--FREEI-2459 although we are not really using the api for the call log app yet.  The other apps rely on this <appconfig> chunk -->
   <appconfig id="call_log" use_pbx_credentials="1">
-    <account account_id="16" username="432" appserver="http://10.162.15.220:82/dphoneApi.php"/>
+    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
   </appconfig>
   <appconfig id="contacts" use_pbx_credentials="1">
     <!--PHONES-3007 added in_switchvox_environment setting here because there was no easy way to  get this setting's value at this time. see ticket for details-->
     <settings in_switchvox_environment="1"/>
     <settings preferred_contact_group=""/>
-    <account account_id="16" username="432" appserver="http://10.162.15.220:82/dphoneApi.php"/>
+    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
     <settings use_local_storage="0" can_transfer_vm="1"/>
     <auto_start/>
     <display_rules>
@@ -323,20 +323,20 @@
     </display_rules>
   </appconfig>
   <appconfig id="parking" use_pbx_credentials="1">
-    <account account_id="16" username="432" appserver="http://10.162.15.220:82/dphoneApi.php"/>
+    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
     <auto_start/>
   </appconfig>
   <appconfig id="status" use_pbx_credentials="1">
-    <account account_id="16" username="432" appserver="http://10.162.15.220:82/dphoneApi.php"/>
+    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
     <auto_start/>
     <full_application/>
   </appconfig>
   <appconfig id="voicemail" use_pbx_credentials="1">
-    <account account_id="16" username="432" appserver="http://10.162.15.220:82/dphoneApi.php"/>
+    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
     <auto_start/>
   </appconfig>
   <appconfig id="hotdesking" use_pbx_credentials="1" status="logged_in">
-    <account account_id="16" username="432" appserver="http://10.162.15.220:82/dphoneApi.php"/>
+    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
     <auto_start/>
   </appconfig>
 </config>
