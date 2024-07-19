@@ -1,342 +1,1269 @@
-<config>
-  <setting id="network_enable_dhcp" value="0"/>
-  <setting id="network_static_ip_address" value="1"/>
-  <setting id="login_password" value="836348"/>
-  <setting id="time_zone" value="Asia/Kolkata"/>
-  <setting id="time_source" value="ntp"/>
-  <setting id="ntp_server" value="0.in.pool.ntp.org"/>
-  <setting id="ntp_resync" value="86400"/>
-  <setting id="accept_local_calls" value="host"/>
-  <setting id="transport_udp_enabled" value="1"/>
-  <setting id="transport_udp_port" value="5060"/>
-  <setting id="transport_tcp_enabled" value="1"/>
-  <setting id="transport_tcp_port" value="5060"/>
-  <setting id="display_mc_notification" value="1"/>
-  <setting id="brightness" value="5"/>
-  <setting id="contrast" value="5"/>
-  <setting id="dim_backlight" value="1"/>
-  <setting id="backlight_timeout" value="30"/>
-  <setting id="backlight_dim_level" value="2"/>
-  <setting id="ringer_volume" value="5"/>
-  <setting id="speaker_volume" value="5"/>
-  <setting id="handset_volume" value="5"/>
-  <setting id="headset_volume" value="5"/>
-  <setting id="reset_call_volume" value="0"/>
-  <setting id="active_ringtone" value="Digium"/>
-  <setting id="headset_answer" value="0"/>
-  <setting id="enable_blf_on_unused_line_keys" value="1"/>
-  <setting id="name_format" value="first_last"/>
-  <setting id="contacts_max_subscriptions" value="60"/>
-  <setting id="blf_contact_group" value="Line Keys"/>
-  <setting id="network_subnet_mask" value=""/>
-  <setting id="network_default_gateway" value=""/>
-  <setting id="network_domain_name" value=""/>
-  <setting id="network_primary_dns_server" value=""/>
-  <setting id="network_secondary_dns_server" value=""/>
-  <setting id="network_vlan_discovery_mode" value="NONE" network="0.0.0.0/0"/>
-  <setting id="sip_qos" value="3"/>
-  <setting id="rtp_qos" value="6"/>
-  <setting id="pc_qos" value="1"/>
-  <setting id="network_vlan_id" value=""/>
-  <setting id="enable_logging" value="0"/>
-  <setting id="log_server" value="10.1.2.3"/>
-  <setting id="log_port" value="514"/>
-  <setting id="web_ui_enabled" value="0"/>
-  <setting id="sip_dscp" value="24"/>
-  <setting id="rtp_dscp" value="46"/>
-  <setting id="udp_ka_interval" value="0"/>
-  <setting id="enable_check_sync" value="1"/>
-  <setting id="locale" value="en_US"/>
-  <setting id="ehs" value="auto"/>
-  <contacts url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/600-1.xml" md5="347a17d1c585d9d6febb14a95decfacc" id="internal"/>
-  <setting id="ring_headset_only" value="0"/>
-  <setting id="call_waiting_tone" value="1"/>
-  <setting id="pc_vlan_id" value=""/>
-  <setting id="lan_port_mode" value="auto"/>
-  <setting id="pc_port_mode" value="auto"/>
-  <setting id="8021x_passthrough" value="0"/>
-  <setting id="8021x_eapol_on_disconnect" value="0"/>
-  <setting id="8021x_method" value=""/>
-  <setting id="8021x_identity" value=""/>
-  <setting id="8021x_anonymous_identity" value=""/>
-  <setting id="8021x_password" value=""/>
-  <setting id="8021x_client_cert" url="" value=""/>
-  <setting id="8021x_root_cert" url="" value=""/>
-  <setting id="8021x_debug" value=""/>
-  <setting id="parking_lot_extension" value="70"/>
-  <setting id="parking_lot_enable_blind_transfer" value="1"/>
-  <setting id="use_call_photos" value="1" url=""/>
-  <setting id="expansion_enable" value="0" type="EXP100" page_indicators="0"/>
-  <setting id="server_environment" value="Switchvox"/>
-  <setting id="config_server_url" value="sip:proxy@10.162.15.220:5060;transport=udp"/>
-  <setting id="network_default_enable_openvpn" value="0"/>
-  <setting id="openvpn_inline_config" url=""/>
-  <setting id="send_mac_with_useragent" value="1"/>
-  <setting id="transport_tls_allowed" value="1"/>
-  <setting id="transport_tls_port" value="5060"/>
-  <setting id="tls_allow_wildcard_certs" value="0"/>
-  <setting id="lock_ringing_volume" value="0"/>
-  <setting id="hide_completed_elsewhere" value="0"/>
-  <setting id="idle_company_text" value=""/>
-  <smart_blf>
-    <blf_items url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/600-1-blf.xml" md5="74bfb4fc2f43b4da9544db2223a9543f"/>
-  </smart_blf>
-  <codecs>
-    <codec id="PCMU" priority="255" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="PCMA" priority="13" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="G722" priority="11" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="G726-32" priority="7" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="G729" priority="4" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="L16" priority="2" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="L16-256" priority="1" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1"/>
-    <codec id="opus" priority="6" packetization="20" jitter_min="0" jitter_max="0" jitter_target="0" enabled="1" complexity="10" samplerate="wb" use_vbr="1"/>
-  </codecs>
-  <ringtones>
-    <tones>
-      <tone id="Alarm" display="Alarm" type="phone"/>
-      <tone id="Chimes" display="Chimes" type="phone"/>
-      <tone id="Digium" display="Digium" type="phone"/>
-      <tone id="GuitarStrum" display="Guitar Strum" type="phone"/>
-      <tone id="Jingle" display="Jingle" type="phone"/>
-      <tone id="Office" display="Office" type="phone"/>
-      <tone id="Office2" display="Office 2" type="phone"/>
-      <tone id="RotaryPhone" display="Rotary Phone" type="phone"/>
-      <tone id="SteelDrum" display="Steel Drum" type="phone"/>
-      <tone id="Techno" display="Techno" type="phone"/>
-      <tone id="Theme" display="Theme" type="phone"/>
-      <tone id="Tweedle" display="Tweedle" type="phone"/>
-      <tone id="Twinkle" display="Twinkle" type="phone"/>
-      <tone id="Vibe" display="Vibe" type="phone"/>
-    </tones>
-    <alerts>
-      <alert alert_info="normal" ringtone_id="Digium" ring_type="normal"/>
-      <alert alert_info="ring-answer" ringtone_id="Digium" ring_type="ring-answer"/>
-      <alert alert_info="intercom" ringtone_id="" ring_type="answer"/>
-      <alert alert_info="visual" ringtone_id="" ring_type="visual"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=normal" ringtone_id="Digium" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=ring-answer" ringtone_id="Digium" ring_type="ring-answer"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=intercom" ringtone_id="" ring_type="answer"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=visual" ringtone_id="" ring_type="visual"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Alarm" ringtone_id="Alarm" ring_type="normal"/>
-      <alert alert_info="Alarm" ringtone_id="Alarm" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Chimes" ringtone_id="Chimes" ring_type="normal"/>
-      <alert alert_info="Chimes" ringtone_id="Chimes" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Digium" ringtone_id="Digium" ring_type="normal"/>
-      <alert alert_info="Digium" ringtone_id="Digium" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=GuitarStrum" ringtone_id="GuitarStrum" ring_type="normal"/>
-      <alert alert_info="GuitarStrum" ringtone_id="GuitarStrum" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Jingle" ringtone_id="Jingle" ring_type="normal"/>
-      <alert alert_info="Jingle" ringtone_id="Jingle" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Office" ringtone_id="Office" ring_type="normal"/>
-      <alert alert_info="Office" ringtone_id="Office" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Office2" ringtone_id="Office2" ring_type="normal"/>
-      <alert alert_info="Office2" ringtone_id="Office2" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=RotaryPhone" ringtone_id="RotaryPhone" ring_type="normal"/>
-      <alert alert_info="RotaryPhone" ringtone_id="RotaryPhone" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=SteelDrum" ringtone_id="SteelDrum" ring_type="normal"/>
-      <alert alert_info="SteelDrum" ringtone_id="SteelDrum" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Techno" ringtone_id="Techno" ring_type="normal"/>
-      <alert alert_info="Techno" ringtone_id="Techno" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Theme" ringtone_id="Theme" ring_type="normal"/>
-      <alert alert_info="Theme" ringtone_id="Theme" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Tweedle" ringtone_id="Tweedle" ring_type="normal"/>
-      <alert alert_info="Tweedle" ringtone_id="Tweedle" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Twinkle" ringtone_id="Twinkle" ring_type="normal"/>
-      <alert alert_info="Twinkle" ringtone_id="Twinkle" ring_type="normal"/>
-      <alert alert_info="&lt;http://127.0.0.1&gt;;info=Vibe" ringtone_id="Vibe" ring_type="normal"/>
-      <alert alert_info="Vibe" ringtone_id="Vibe" ring_type="normal"/>
-    </alerts>
-  </ringtones>
-  <firmwares>
-    <firmware model="D50" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D50.eff"/>
-    <firmware model="D70" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D70.eff"/>
-    <firmware model="D40" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D40.eff"/>
-    <firmware model="D45" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D45.eff"/>
-    <firmware model="D60" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D60.eff"/>
-    <firmware model="D62" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D62.eff"/>
-    <firmware model="D65" version="2_9_25" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D65.eff"/>
-    <firmware model="D80" version="1_12_14" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/D80.eff"/>
-    <firmware model="P310" version="4_15_4" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/P310.eff"/>
-    <firmware model="P315" version="4_15_4" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/P315.eff"/>
-    <firmware model="P320" version="4_15_4" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/P320.eff"/>
-    <firmware model="P325" version="4_15_4" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/P325.eff"/>
-    <firmware model="P330" version="4_15_4" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/P330.eff"/>
-    <firmware model="P370" version="4_15_4" url="http://8845eb11:e0a340427a119b5f@10.162.15.220:84/digium/0/P370.eff"/>
-  </firmwares>
-  <multicastpage/>
-  <public_firmwares>
-    <public_firmware model="P310" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P310_firmware.eff"/>
-    <public_firmware model="P315" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P315_firmware.eff"/>
-    <public_firmware model="P320" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P320_firmware.eff"/>
-    <public_firmware model="P325" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P325_firmware.eff"/>
-    <public_firmware model="P330" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P330_firmware.eff"/>
-    <public_firmware model="P370" version="4_15_4" url="http://phones.dl.sangoma.com/firmware/p-series/4_15_4/4_15_4_P370_firmware.eff"/>
-  </public_firmwares>
-  <accounts>
-    <account index="0" status="1" register="1" account_id="95" username="600" authname="600" password="140600" passcode="140600" line_label="Test1-600" caller_id="Test1-600" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace" api_password="$2a$08$U9rna3/CNHSGAHUAwGED8.i2zRa/eT8SGz2QnNrTP6EzBmBHU8nOG">
-      <host_primary server="10.162.15.11" port="5060" transport="udp" reregister="300" retry="25" num_retries="5" media_encryption=""/>
-      <host_alternate server="" port="5060" transport="udp" reregister="300" retry="25"/>
-      <setting id="parking_lot_extension" value="70"/>
-      <setting id="parking_lot_enable_blind_transfer" value="1"/>
-      <setting id="use_call_log_api" value="0"/>
-      <setting id="call_log_fetch_entries" value="50"/>
-      <permission id="record_own_calls" value="0"/>
-    </account>
-    <account index="1" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
-      <host_primary server="" port="5060" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
-      <host_alternate server="" port="5060" transport="0" reregister="300" retry="25"/>
-      <setting id="parking_lot_extension" value="70"/>
-      <setting id="parking_lot_enable_blind_transfer" value="1"/>
-    </account>
-    <account index="2" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
-      <host_primary server="" port="5060" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
-      <host_alternate server="" port="5060" transport="0" reregister="300" retry="25"/>
-      <setting id="parking_lot_extension" value="70"/>
-      <setting id="parking_lot_enable_blind_transfer" value="1"/>
-    </account>
-    <account index="3" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
-      <host_primary server="" port="5060" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
-      <host_alternate server="" port="5060" transport="0" reregister="300" retry="25"/>
-      <setting id="parking_lot_extension" value="70"/>
-      <setting id="parking_lot_enable_blind_transfer" value="1"/>
-    </account>
-    <account index="4" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
-      <host_primary server="" port="5060" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
-      <host_alternate server="" port="5060" transport="0" reregister="300" retry="25"/>
-      <setting id="parking_lot_extension" value="70"/>
-      <setting id="parking_lot_enable_blind_transfer" value="1"/>
-    </account>
-    <account index="5" status="0" register="0" account_id="" username="" authname="" password="" passcode="" line_label="" caller_id="" dial_plan="[1-9]xxx.T3|[2-9]11|011xxxx.T3|1[2-9]xxxxxxxxx|[2-9]xxxxxxxxx|*xx.T3" visual_voicemail="0" voicemail="*97" outbound_proxy="" outbound_port="" conflict="replace">
-      <host_primary server="" port="5060" transport="0" reregister="300" retry="25" num_retries="5" media_encryption=""/>
-      <host_alternate server="" port="5060" transport="0" reregister="300" retry="25"/>
-      <setting id="parking_lot_extension" value="70"/>
-      <setting id="parking_lot_enable_blind_transfer" value="1"/>
-    </account>
-  </accounts>
-  <keymap>
-    <state id="idle" conflict="replace">
-      <softkeys>
-        <key id="0" action="missed_or_call_log"/>
-        <key id="1" action="show_application" label1="_CONTACTS">
-          <arg>contacts</arg>
-        </key>
-        <key id="2" action="none"/>
-        <key id="3" action="none"/>
-        <key id="4" action="show_application" label1="_PARKED_CALLS">
-          <arg>parking</arg>
-        </key>
-        <key id="5" action="show_application" label1="_LOGOUT">
-          <arg>hotdesking</arg>
-        </key>
-        <key id="6" action="show_application" label1="_STATUS">
-          <arg>status</arg>
-        </key>
-        <key id="7" action="forward_calls" label1="_FORWARD"/>
-        <key id="8" action="menu"/>
-      </softkeys>
-    </state>
-    <state id="hold" conflict="replace">
-      <softkeys>
-        <key id="0" action="resume"/>
-        <key id="1" action="show_application" label1="_CONTACTS">
-          <arg>contacts</arg>
-        </key>
-        <key id="2" action="end_call"/>
-      </softkeys>
-    </state>
-    <state id="incoming" conflict="replace">
-      <softkeys>
-        <key id="0" action="accept_call"/>
-        <key id="1" action="reject_call"/>
-        <key id="2" action="transfer_call"/>
-        <key id="3" action="send_to_vmail"/>
-      </softkeys>
-    </state>
-    <state id="connected" conflict="replace">
-      <softkeys>
-        <key id="0" action="conference"/>
-        <key id="1" action="show_application" label1="_CONTACTS">
-          <arg>contacts</arg>
-        </key>
-        <key id="2" action="end_call"/>
-        <key id="3" action="record_call"/>
-        <key id="4" action="park_call" label1="Park"/>
-      </softkeys>
-    </state>
-    <state id="dial" conflict="replace">
-      <softkeys>
-        <key id="0" action="show_application" label1="_PARKED_CALLS">
-          <arg>parking</arg>
-        </key>
-        <key id="1" action="show_application" label1="_CONTACTS">
-          <arg>contacts</arg>
-        </key>
-        <key id="2" action="cancel_call"/>
-      </softkeys>
-    </state>
-    <state id="calling" conflict="replace">
-      <softkeys>
-        <key id="0" action="end_call"/>
-      </softkeys>
-    </state>
-  </keymap>
-  <networks>
-    <network id="0" display_name="All Networks" cidr="0.0.0.0/0"/>
-  </networks>
-  <appconfig id="phonemenu">
-    <hide_options id="admin">
-      <option id="changePassword"/>
-      <option id="sipLines"/>
-    </hide_options>
-    <auto_start/>
-  </appconfig>
-  <setting id="pbx_credentials" value="SWVX-7151" network="0.0.0.0/0" network_id="0" host="10.162.15.220" account_id="95" user="600" pass="$2a$08$U9rna3/CNHSGAHUAwGED8.i2zRa/eT8SGz2QnNrTP6EzBmBHU8nOG"/>
-  <settings in_switchvox_environment="1"/>
-  <appconfig id="appscreen">
-    <application id="call_log"/>
-    <application id="contacts"/>
-    <application id="parking"/>
-    <application id="status"/>
-    <application id="forward_calls"/>
-    <application id="voicemail"/>
-    <application id="hotdesking"/>
-    <application id="mcastpage"/>
-  </appconfig>
-  <!--FREEI-2459 although we are not really using the api for the call log app yet.  The other apps rely on this <appconfig> chunk -->
-  <appconfig id="call_log" use_pbx_credentials="1">
-    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
-  </appconfig>
-  <appconfig id="contacts" use_pbx_credentials="1">
-    <!--PHONES-3007 added in_switchvox_environment setting here because there was no easy way to  get this setting's value at this time. see ticket for details-->
-    <settings in_switchvox_environment="1"/>
-    <settings preferred_contact_group=""/>
-    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
-    <settings use_local_storage="0" can_transfer_vm="1"/>
-    <auto_start/>
-    <display_rules>
-      <display_rule id="1" action_id="intercom" show="0"/>
-      <display_rule id="2" action_id="intercom" target_status="idle" show="1"/>
-      <display_rule id="3" action_id="intercom" phone_state="incoming/transfer" show="0"/>
-      <display_rule id="4" action_id="intercom" request_mode="select" show="0"/>
-      <display_rule id="5" action_id="monitor" phone_state="incoming/transfer" show="0"/>
-      <display_rule id="6" action_id="monitor" request_mode="select" show="0"/>
-    </display_rules>
-  </appconfig>
-  <appconfig id="parking" use_pbx_credentials="1">
-    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
-    <auto_start/>
-  </appconfig>
-  <appconfig id="status" use_pbx_credentials="1">
-    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
-    <auto_start/>
-    <full_application/>
-  </appconfig>
-  <appconfig id="voicemail" use_pbx_credentials="1">
-    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
-    <auto_start/>
-  </appconfig>
-  <appconfig id="hotdesking" use_pbx_credentials="1" status="logged_in">
-    <account account_id="95" username="600" appserver="http://10.162.15.220:82/dphoneApi.php"/>
-    <auto_start/>
-  </appconfig>
-</config>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<merged_contacts>
+<contacts group_name="Line Keys" editable="0" id=""/>
+<contacts group_name="User Manager Group" editable="0" id=""/>
+<contacts group_name="PBX_DEFAULT_DIRECTORY" editable="0" id=""/>
+<contacts>
+<contact contact_type="sip" id="contact_1_1" first_name="exchange" last_name="Room" organization="" job_title="" location="" account_id="1">
+<actions>
+<action dial_prefix="" dial="413" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="413" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="413" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_2" first_name="DRM" last_name="" organization="" job_title="" location="" account_id="2">
+<actions>
+<action dial_prefix="" dial="400" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="400" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="400" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_3" first_name="Dy." last_name="CPM (Engg) GSU" organization="" job_title="" location="" account_id="3">
+<actions>
+<action dial_prefix="" dial="401" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="401" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="401" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_4" first_name="ADRM" last_name="Admin" organization="" job_title="" location="" account_id="4">
+<actions>
+<action dial_prefix="" dial="402" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="402" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="402" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_5" first_name="COS" last_name="G" organization="" job_title="" location="" account_id="5">
+<actions>
+<action dial_prefix="" dial="403" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="403" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="403" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_6" first_name="Sr." last_name="DMM" organization="" job_title="" location="" account_id="6">
+<actions>
+<action dial_prefix="" dial="405" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="405" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="405" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_7" first_name="Dy." last_name="CPM (ELEC). GSU" organization="" job_title="" location="" account_id="7">
+<actions>
+<action dial_prefix="" dial="406" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="406" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="406" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_8" first_name="CPM" last_name="GSU/ADRM INFRA" organization="" job_title="" location="" account_id="8">
+<actions>
+<action dial_prefix="" dial="407" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="407" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="407" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_9" first_name="ADRM" last_name="OP" organization="" job_title="" location="" account_id="9">
+<actions>
+<action dial_prefix="" dial="409" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="409" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="409" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_10" first_name="Sr." last_name="DFM" organization="" job_title="" location="" account_id="10">
+<actions>
+<action dial_prefix="" dial="410" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="410" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="410" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_11" first_name="CMS" last_name="" organization="" job_title="" location="" account_id="11">
+<actions>
+<action dial_prefix="" dial="460" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="460" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="460" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_12" first_name="Sr." last_name="ENHM" organization="" job_title="" location="" account_id="12">
+<actions>
+<action dial_prefix="" dial="545" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="545" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="545" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_13" first_name="Sr." last_name="DCM" organization="" job_title="" location="" account_id="13">
+<actions>
+<action dial_prefix="" dial="421" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="421" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="421" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_14" first_name="Sr." last_name="DEE(G)" organization="" job_title="" location="" account_id="14">
+<actions>
+<action dial_prefix="" dial="430" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="430" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="430" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_15" first_name="Sr." last_name="DEE(EMU)" organization="" job_title="" location="" account_id="15">
+<actions>
+<action dial_prefix="" dial="431" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="431" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="431" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_16" first_name="Sr.DEE" last_name="(TRD)" organization="" job_title="" location="" account_id="16">
+<actions>
+<action dial_prefix="" dial="432" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="432" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="432" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_17" first_name="Sr." last_name="DEE(OP)" organization="" job_title="" location="" account_id="17">
+<actions>
+<action dial_prefix="" dial="433" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="433" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="433" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_18" first_name="Sr." last_name="DEN(CORD)" organization="" job_title="" location="" account_id="18">
+<actions>
+<action dial_prefix="" dial="440" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="440" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="440" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_19" first_name="Sr." last_name="DEN I" organization="" job_title="" location="" account_id="19">
+<actions>
+<action dial_prefix="" dial="441" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="441" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="441" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_20" first_name="Sr." last_name="DEN II" organization="" job_title="" location="" account_id="20">
+<actions>
+<action dial_prefix="" dial="442" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="442" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="442" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_21" first_name="Sr." last_name="DEN III" organization="" job_title="" location="" account_id="21">
+<actions>
+<action dial_prefix="" dial="443" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="443" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="443" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_22" first_name="Sr." last_name="DEN IV" organization="" job_title="" location="" account_id="22">
+<actions>
+<action dial_prefix="" dial="444" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="444" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="444" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_23" first_name="Sr." last_name="DEN Bridge" organization="" job_title="" location="" account_id="23">
+<actions>
+<action dial_prefix="" dial="445" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="445" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="445" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_24" first_name="Sr." last_name="DEN Project" organization="" job_title="" location="" account_id="24">
+<actions>
+<action dial_prefix="" dial="542" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="542" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="542" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_25" first_name="Sr." last_name="DME (C&W)" organization="" job_title="" location="" account_id="25">
+<actions>
+<action dial_prefix="" dial="450" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="450" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="450" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_26" first_name="Sr." last_name="DME (Diesel)" organization="" job_title="" location="" account_id="26">
+<actions>
+<action dial_prefix="" dial="451" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="451" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="451" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_27" first_name="Sr." last_name="DME Power" organization="" job_title="" location="" account_id="27">
+<actions>
+<action dial_prefix="" dial="452" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="452" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="452" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_28" first_name="Sr." last_name="DME (Coaching)" organization="" job_title="" location="" account_id="28">
+<actions>
+<action dial_prefix="" dial="411" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="411" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="411" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_29" first_name="Sr." last_name="Audit Officer" organization="" job_title="" location="" account_id="29">
+<actions>
+<action dial_prefix="" dial="412" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="412" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="412" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_30" first_name="Sr." last_name="DOM" organization="" job_title="" location="" account_id="30">
+<actions>
+<action dial_prefix="" dial="470" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="470" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="470" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_31" first_name="Sr." last_name="DSO" organization="" job_title="" location="" account_id="31">
+<actions>
+<action dial_prefix="" dial="471" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="471" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="471" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_32" first_name="Sr." last_name="Station Director" organization="" job_title="" location="" account_id="32">
+<actions>
+<action dial_prefix="" dial="472" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="472" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="472" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_33" first_name="Sr." last_name="DPO" organization="" job_title="" location="" account_id="33">
+<actions>
+<action dial_prefix="" dial="480" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="480" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="480" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_34" first_name="Sr." last_name="DSC" organization="" job_title="" location="" account_id="34">
+<actions>
+<action dial_prefix="" dial="485" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="485" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="485" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_35" first_name="Sr." last_name="DSC II" organization="" job_title="" location="" account_id="35">
+<actions>
+<action dial_prefix="" dial="486" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="486" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="486" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_36" first_name="Sr." last_name="DSTE" organization="" job_title="" location="" account_id="36">
+<actions>
+<action dial_prefix="" dial="490" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="490" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="490" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_37" first_name="Dy." last_name="CSTE Works" organization="" job_title="" location="" account_id="37">
+<actions>
+<action dial_prefix="" dial="495" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="495" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="495" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_38" first_name="Dy." last_name="CSTE CON" organization="" job_title="" location="" account_id="38">
+<actions>
+<action dial_prefix="" dial="496" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="496" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="496" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_39" first_name="DSTE" last_name="I" organization="" job_title="" location="" account_id="39">
+<actions>
+<action dial_prefix="" dial="497" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="497" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="497" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_40" first_name="Dy." last_name="CE (CON I)" organization="" job_title="" location="" account_id="40">
+<actions>
+<action dial_prefix="" dial="447" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="447" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="447" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_41" first_name="Dy." last_name="CE (CON II)" organization="" job_title="" location="" account_id="41">
+<actions>
+<action dial_prefix="" dial="448" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="448" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="448" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_42" first_name="Sr" last_name="DEN HQ" organization="" job_title="" location="" account_id="42">
+<actions>
+<action dial_prefix="" dial="446" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="446" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="446" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_43" first_name="Sr." last_name="DSTE I" organization="" job_title="" location="" account_id="43">
+<actions>
+<action dial_prefix="" dial="491" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="491" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="491" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_44" first_name="TI/DRM" last_name="" organization="" job_title="" location="" account_id="44">
+<actions>
+<action dial_prefix="" dial="404" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="404" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="404" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_45" first_name="DFM" last_name="II" organization="" job_title="" location="" account_id="45">
+<actions>
+<action dial_prefix="" dial="455" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="455" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="455" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_46" first_name="DFM" last_name="" organization="" job_title="" location="" account_id="46">
+<actions>
+<action dial_prefix="" dial="415" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="415" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="415" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_47" first_name="ADFM" last_name="PC" organization="" job_title="" location="" account_id="47">
+<actions>
+<action dial_prefix="" dial="416" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="416" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="416" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_48" first_name="ADFM" last_name="II" organization="" job_title="" location="" account_id="48">
+<actions>
+<action dial_prefix="" dial="544" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="544" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="544" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_49" first_name="ACMS" last_name="(P)" organization="" job_title="" location="" account_id="49">
+<actions>
+<action dial_prefix="" dial="461" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="461" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="461" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_50" first_name="ACMS" last_name="Admin" organization="" job_title="" location="" account_id="50">
+<actions>
+<action dial_prefix="" dial="462" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="462" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="462" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_51" first_name="DEE(G)" last_name="" organization="" job_title="" location="" account_id="51">
+<actions>
+<action dial_prefix="" dial="434" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="434" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="434" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_52" first_name="DEE(TRD" last_name="I)" organization="" job_title="" location="" account_id="52">
+<actions>
+<action dial_prefix="" dial="435" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="435" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="435" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_53" first_name="DEE" last_name="(TRDII)" organization="" job_title="" location="" account_id="53">
+<actions>
+<action dial_prefix="" dial="436" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="436" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="436" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_54" first_name="TPC" last_name="Control" organization="" job_title="" location="" account_id="54">
+<actions>
+<action dial_prefix="" dial="437" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="437" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="437" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_55" first_name="DEE(EMU)" last_name="" organization="" job_title="" location="" account_id="55">
+<actions>
+<action dial_prefix="" dial="522" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="522" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="522" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_56" first_name="DEE(Coaching)" last_name="" organization="" job_title="" location="" account_id="56">
+<actions>
+<action dial_prefix="" dial="556" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="556" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="556" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_57" first_name="DEN" last_name="PROJECT" organization="" job_title="" location="" account_id="57">
+<actions>
+<action dial_prefix="" dial="550" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="550" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="550" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_58" first_name="DEN(BRL)" last_name="" organization="" job_title="" location="" account_id="58">
+<actions>
+<action dial_prefix="" dial="543" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="543" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="543" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_59" first_name="CDO" last_name="TKPR" organization="" job_title="" location="" account_id="59">
+<actions>
+<action dial_prefix="" dial="453" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="453" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="453" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_60" first_name="DME" last_name="(DIESEL)" organization="" job_title="" location="" account_id="60">
+<actions>
+<action dial_prefix="" dial="454" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="454" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="454" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_61" first_name="DOM" last_name="SAFETY" organization="" job_title="" location="" account_id="61">
+<actions>
+<action dial_prefix="" dial="408" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="408" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="408" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_62" first_name="DOM" last_name="COACHING" organization="" job_title="" location="" account_id="62">
+<actions>
+<action dial_prefix="" dial="473" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="473" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="473" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_63" first_name="CHIEF" last_name="CONTROLLER" organization="" job_title="" location="" account_id="63">
+<actions>
+<action dial_prefix="" dial="474" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="474" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="474" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_64" first_name="STATION" last_name="MANAGER" organization="" job_title="" location="" account_id="64">
+<actions>
+<action dial_prefix="" dial="475" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="475" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="475" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_65" first_name="Dy.COACHING" last_name="" organization="" job_title="" location="" account_id="65">
+<actions>
+<action dial_prefix="" dial="476" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="476" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="476" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_66" first_name="DSO" last_name="" organization="" job_title="" location="" account_id="66">
+<actions>
+<action dial_prefix="" dial="477" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="477" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="477" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_67" first_name="AOM" last_name="SAFETY" organization="" job_title="" location="" account_id="67">
+<actions>
+<action dial_prefix="" dial="478" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="478" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="478" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_68" first_name="RRI" last_name="" organization="" job_title="" location="" account_id="68">
+<actions>
+<action dial_prefix="" dial="479" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="479" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="479" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_69" first_name="DOM(OP)" last_name="" organization="" job_title="" location="" account_id="69">
+<actions>
+<action dial_prefix="" dial="439" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="439" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="439" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_70" first_name="SRP" last_name="" organization="" job_title="" location="" account_id="70">
+<actions>
+<action dial_prefix="" dial="487" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="487" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="487" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_71" first_name="DSTE" last_name="WORKS" organization="" job_title="" location="" account_id="71">
+<actions>
+<action dial_prefix="" dial="493" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="493" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="493" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_72" first_name="ASTE" last_name="I" organization="" job_title="" location="" account_id="72">
+<actions>
+<action dial_prefix="" dial="492" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="492" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="492" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_73" first_name="ASTE" last_name="TELE" organization="" job_title="" location="" account_id="73">
+<actions>
+<action dial_prefix="" dial="499" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="499" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="499" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_74" first_name="ELAB" last_name="" organization="" job_title="" location="" account_id="74">
+<actions>
+<action dial_prefix="" dial="498" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="498" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="498" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_75" first_name="CONTROL" last_name="TEST ROOM TELE" organization="" job_title="" location="" account_id="75">
+<actions>
+<action dial_prefix="" dial="417" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="417" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="417" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_76" first_name="SIGNAL" last_name="CONTROL" organization="" job_title="" location="" account_id="76">
+<actions>
+<action dial_prefix="" dial="449" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="449" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="449" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_77" first_name="AUTO" last_name="TEST ROOM" organization="" job_title="" location="" account_id="77">
+<actions>
+<action dial_prefix="" dial="539" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="539" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="539" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_78" first_name="DCM" last_name="" organization="" job_title="" location="" account_id="78">
+<actions>
+<action dial_prefix="" dial="422" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="422" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="422" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_79" first_name="ACM(PG)" last_name="" organization="" job_title="" location="" account_id="79">
+<actions>
+<action dial_prefix="" dial="423" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="423" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="423" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_80" first_name="ACM" last_name="" organization="" job_title="" location="" account_id="80">
+<actions>
+<action dial_prefix="" dial="424" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="424" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="424" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_81" first_name="ACM" last_name="(HG)" organization="" job_title="" location="" account_id="81">
+<actions>
+<action dial_prefix="" dial="425" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="425" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="425" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_82" first_name="ACM" last_name="I" organization="" job_title="" location="" account_id="82">
+<actions>
+<action dial_prefix="" dial="426" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="426" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="426" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_83" first_name="ACM" last_name="(TC)" organization="" job_title="" location="" account_id="83">
+<actions>
+<action dial_prefix="" dial="427" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="427" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="427" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_84" first_name="DPO" last_name="" organization="" job_title="" location="" account_id="84">
+<actions>
+<action dial_prefix="" dial="481" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="481" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="481" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_85" first_name="DPO" last_name="I" organization="" job_title="" location="" account_id="85">
+<actions>
+<action dial_prefix="" dial="482" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="482" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="482" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_86" first_name="APO" last_name="I" organization="" job_title="" location="" account_id="86">
+<actions>
+<action dial_prefix="" dial="489" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="489" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="489" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_87" first_name="APO" last_name="II" organization="" job_title="" location="" account_id="87">
+<actions>
+<action dial_prefix="" dial="483" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="483" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="483" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_88" first_name="APO" last_name="III" organization="" job_title="" location="" account_id="88">
+<actions>
+<action dial_prefix="" dial="484" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="484" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="484" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_89" first_name="APO" last_name="G" organization="" job_title="" location="" account_id="89">
+<actions>
+<action dial_prefix="" dial="488" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="488" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="488" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_90" first_name="Dy.CEE" last_name="TRD" organization="" job_title="" location="" account_id="90">
+<actions>
+<action dial_prefix="" dial="530" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="530" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="530" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_91" first_name="Sr." last_name="DEE EMU" organization="" job_title="" location="" account_id="91">
+<actions>
+<action dial_prefix="" dial="532" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="532" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="532" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_92" first_name="Dy." last_name="CEE TRD Project" organization="" job_title="" location="" account_id="92">
+<actions>
+<action dial_prefix="" dial="438" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="438" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="438" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_93" first_name="Dy." last_name="CSTE CON II" organization="" job_title="" location="" account_id="93">
+<actions>
+<action dial_prefix="" dial="494" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="494" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="494" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_94" first_name="Sr." last_name="DSTE Residence" organization="" job_title="" location="" account_id="94">
+<actions>
+<action dial_prefix="" dial="561" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="561" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="561" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_95" first_name="600" last_name="" organization="" job_title="" location="" account_id="95">
+<actions>
+<action dial_prefix="" dial="600" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="600" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="600" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_96" first_name="601" last_name="" organization="" job_title="" location="" account_id="96">
+<actions>
+<action dial_prefix="" dial="601" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="601" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="601" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+<contact contact_type="sip" id="contact_1_97" first_name="Pri" last_name="verma" organization="" job_title="" location="" account_id="97">
+<actions>
+<action dial_prefix="" dial="602" name="CN_ACTN_DIAL" label="CL_ACTN_SIP" id="primary" transfer_name="CN_ACTN_TRANSFER"/>
+<action dial_prefix="*" dial="602" name="CONTACT_ACT_DIAL_VM" label="CL_ACTN_SIP" id="dial_vm"/>
+<action dial_prefix="" dial="602" name="CONTACT_ACT_INTERCOM" label="CL_ACTN_SIP" id="intercom">
+<headers>
+<header key="X-Digium-Call-Feature" value="feature_intercom"/>
+</headers>
+</action>
+</actions>
+<group group_name="User Manager Group"/>
+<group group_name="PBX_DEFAULT_DIRECTORY"/>
+</contact>
+</contacts>
+</merged_contacts>
